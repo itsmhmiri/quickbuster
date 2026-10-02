@@ -150,7 +150,7 @@ class Analyzer:
                     if abs(result.content_length - b_len) <= self.tolerance:
                         if (
                             result.word_count in self.calibration.baseline_words
-                            or result.line_count in self.calibration.baseline_lines
+                            and result.line_count in self.calibration.baseline_lines
                         ):
                             result.is_anomaly = False
                             return False
