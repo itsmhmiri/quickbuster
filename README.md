@@ -2,6 +2,8 @@
 
 A fast, smart HTTP directory and endpoint discovery tool built with Python and `asyncio`.
 
+![QuickBuster Demo](assets/demo.gif)
+
 Most directory brute-forcers flood your screen with garbage when a site uses single-page application (SPA) catch-alls, custom 404 pages with timestamps, or wildcard redirects. QuickBuster solves this by running a quick calibration step before the scan, learning what "page not found" actually looks like on the target server, and filtering out the false positives automatically.
 
 ---
